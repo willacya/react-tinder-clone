@@ -19,17 +19,19 @@ function App() {
       <Router>
 
         <Switch>
-
+          {/* url/chat/<person-id> */}
           <Route path="/chat/:person">
             <Header backButton="/chat"/>
             <ChatScreen />
           </Route>
 
+          {/* url/chat */}
           <Route path="/chat">
             <Header backButton="/"/>
             <Chats />
           </Route>
 
+          {/* home page */}
           <Route path="/">
             <Header />
             <TinderCards />

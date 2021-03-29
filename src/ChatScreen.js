@@ -6,17 +6,22 @@ function ChatScreen() {
     const [input, setInput] = useState('');
     const [message, setMessage] = useState([
         {
-            name: 'Sarah',
-            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Rachel_Weisz_Montclair_Film_Festival_3_%28cropped%29.jpg/220px-Rachel_Weisz_Montclair_Film_Festival_3_%28cropped%29.jpg',
-            message: "what's up"
+            name: 'Elon',
+            image: 'https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg',
+            message: "I think you would be a great fit for my company."
         },
         {
-            name: 'Sarah',
-            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Rachel_Weisz_Montclair_Film_Festival_3_%28cropped%29.jpg/220px-Rachel_Weisz_Montclair_Film_Festival_3_%28cropped%29.jpg',
-            message: "Looking good"
+            name: 'Elon',
+            image: 'https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg',
+            message: "Name your price!"
         },
         {
-            message: "errm, I'm married..."
+            message: "I'll have to think about it"
+        },
+        {
+            name: 'Elon',
+            image: 'https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg',
+            message: "I'm begging here"
         },
     ]);
 
@@ -29,7 +34,7 @@ function ChatScreen() {
 
     return (
         <div className='chatScreen'>
-           <p className='chatScreen__timestamp'>YOU MATCHED WITH SARAH ON 12/08/21</p>
+           <p className='chatScreen__timestamp'>YOU MATCHED WITH ELON ON 01/04/2021</p>
            {message.map((message) => (
                message.name ? (
                 <div className='chatScreen__message'>
